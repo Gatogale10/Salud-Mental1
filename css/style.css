@@ -1,0 +1,359 @@
+:root
+{
+    --fuenteHeading: 'PT Sans',sans-serif;
+    --fuenteParrafos: 'Open Sans',sans-serif;
+    
+
+    --primario: #784D3C;
+    --gris:#e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --nav:rgb(195, 190, 165);
+
+
+}
+
+html
+{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+}
+
+*,*:before, *::after
+{
+    box-sizing: inherit;
+
+}
+
+
+/*-----------------GLOBALES--------------------------------*/
+.contenedor
+{
+    max-width: 120rem;
+    width: 90%;
+    /**Es lo mismo que colocar lo de arriba**/
+    width: min(90%, 120rem);
+    margin: 0 auto;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+    /*-------Interlineado---------------*/
+    line-height: 1.2;
+}
+
+h1
+{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+
+
+body
+{
+    /* aqui vamos a cambiar la tipografia a como nosotros queramos*/
+    
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/*----------------------------GLOBALES---------------------------*/
+
+
+
+
+.Navegacion
+{
+   
+    display: flex;
+    justify-content:space-evenly;
+    align-content: center;
+    max-width: 120rem;
+    width:auto;
+    
+
+}
+
+.navegacion_principal
+{
+    
+    padding: 0 1rem 0 1rem;
+    
+}
+
+.Logotipo_ballet
+{
+    height: 142px;
+    width: 200px;
+    padding: 2rem 0rem;
+    
+}
+
+.box
+{
+    width: 140px;
+    height: 140px;
+    padding: 0rem 0rem 2rem 0rem;
+    align-content:center;
+}
+
+
+  
+img {
+    height: 100%;
+    width: 100%;
+}
+
+/**Utilidades**/
+.no-margin
+{
+    margin:0;
+}
+
+.no-padding 
+{
+    padding: 0;
+}
+
+.centrar-texto
+{
+    text-align: center;
+}
+
+.cover {
+    object-fit: cover;
+}
+
+
+/*-------------Utilidades*/ 
+
+/*---------------BARRA DE NAVEGACCION---------------------*/  
+.Navv
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 60px 0 0 200px;
+    display: flex;
+    gap: 16px;
+}
+
+.header
+{
+    
+    
+    height: 12rem;
+    width: auto;
+    max-width: 1000rem;
+    background-image: url(../img/fondo-zari.png)
+    
+    
+}
+
+#dinamico
+{
+    top: 0;
+    z-index: 111;
+    height: 120px;
+    width: 10000px;
+    -webkit-animation-name: fade-in-down;
+    animation-name: fade-in-down;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    background-image: url("https://ci3.googleusercontent.com/mail-img-att/AIFldNpFBJ-O_kNb-_pDWuf9Qe9yY5_SmHKBi-BPFhHZPLa-QdOL2s2UgNMoz421RkL8p2guPpG6B80SkN1dZxehvv_kuDB4v6HMxlVc-RHZL3DrpK0ZDLYEM0WsMsP9YidU48MndXZHvV6rWJNZc5Ko7xSuPli1lv-Jyv9Kr1Dl8YvJTQB_8kmlQXcEusiMz8lEmjjpHwVC7Plk10Zz7eHMgtujXeLIgwXR4SeBGP23MSvBip3xqkHkc_N6z0aPcYj0li4J4X3qJLQWOEswJiRvf9PjCLcC8n3ng3-He9q2VTT6QoA77C4Nrdt3k8awsvf-l3JBj7RWS3Y8dXQrJpp7Afc2l4WhhnOntF6VnRerqt6CAHhhjc-JU2Y3os9RFz2K_n6m9caplY6nOlGlsJYpH9vZ2zu0cP1vj3B0pdCfcti3YFDtgKB681SmhWMFwteRGl68ILAq-qQq33gg5ACFcYjqusF7PqyWkiZz838Rqa6SslmAPFEbdlsYjTOOIXFC4ubVu5SYKBJRggG_YO0ZLTAJktFIiqBNXl7XJVXWH6aAdUAVoayxYc4zSOjtC5ZswKfa9_gbmEjjyTdxl3nRK3lvLmIrBH0KOthNiUsyVnLTJ4bpXpsIODgREp7iivyNaNkOIkZqyr0Ag4FSoWb7zWNSZ1mW-T_xAsnvdnpyCHuTDV3GN3xBYeaN9tILWGcG3KvJgW57TIPMmmkqRYIVmPBamuYx3iY8-y93qIoasmymDDB8bW7l1bpuv8RB61LkFK_1a578zLCTocs88_OVnvxEBwI3qTZMJLbvxlt-36YjPwHuS84Too1nRpd369A6od1ZNCy23vGLWvhS2sb1Ij4P0E1YsOJcY4-4loaNci3pmH7SKdT1vbas7isJDiF13Fu_oclTwf-RW9hcb35Ghw96JoiWAstWG9FiwIoi8uGg27hWiUM8JAoINDYUdD_8JMUMMdtnERvW4bc1A8VYjpfpoNyFoxb9cBi5E-EtoKYndbYztGtmVDJQW-OjLWsJp4Ni6uFBH8CPDz2YwGRczrczuxvsidh_-dyJkK_e2GzC3_6JeD9BDxFRrZ4nDn7erNeLPeM1Xjpx1cvU51zDwCfpZ7X4KzAoMpRBjEaXvz1M3x-Qhk5_kWxY5ZGIJD97tk5vobSnu83gkkSqPbdHwIc1bT7PiQMdURSTQquuToO2-cwBVMrimlsINMcx7_TEWFI=s0-l75-ft");
+    
+
+}
+
+.Navegacion
+{
+   
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    max-width: 120rem;
+    width:auto;
+    
+    
+    
+
+}
+
+.frase
+{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.frase h1
+{
+    font-family:'Borel', cursive;
+    font-size: 100px;
+}
+
+.contenedor-nav-display
+{
+    
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position: relative;
+
+}
+
+.contenedor--centrar
+{
+    margin: 0 auto;
+    width: 90%
+}
+
+.desktop-menu__main-li {
+    position: relative;
+    
+    
+}
+
+.color-nosotros
+{
+    background-color: #d03394;
+}
+
+.desktop-menu__main-link {
+    
+    text-decoration-color: initial;
+    color: rgb(24, 26, 27);
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+
+
+.desktop-menu__main-link--parent {
+    padding: 0 34px 0 16px;
+}
+
+.desktop-menu__secondary-menu-wrapper {
+    background-color: transparent;
+}
+
+.desktop-menu__secondary-menu {
+    background-color: rgb(220, 218, 215);
+    color: rgb(24, 26, 27);
+    border-color: rgb(35, 22, 66);
+    box-shadow: rgb(126, 102, 155) -1px 1px 0px;
+}
+
+.desktop-menu__secondary-li {
+    width: 100%;
+}
+
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}  
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+a:hover {
+    background-color:#b51177;
+  }
+
+
+
+
+.img-responsive
+{
+    width: auto;
+    height: auto;
+    background-color:#ffffff;
+    
+}
+
+
+.contain {
+    object-fit: contain;
+}
+
+.estilo-portada
+{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.contenedor
+{
+
+    width: min(90%, 120rem);
+    margin: 0 auto;
+
+}
+
+.contenedor-principal
+{
+    display: grid;
+    /*-----Como se va a acomodar nuestra estructura----------*/
+    /*      En este caso se acomoda en columnas el grid se acomoda en un template de dos columnas*/
+    /*       Que en este caso la primera columa ocupara dos fraciones del total y la segunda 1 fraccion */
+    grid-template-columns: 2fr 1fr;
+
+}
+
+#Frase{
+    text-align: center;
+    
+}
+
+
+
+.desktop-menu__main-li
+{
+    position: relative;
+}
+
+.footer
+{
+    text-align: center;
+    background-color: rgb(248, 231, 199);
+
+}
+
+
+.contenedor-footer
+{
+    display: flex;
+    color: rgb(237, 167, 234);
+    justify-content: space-evenly;
+    
+    
+
+
+}
+
+

@@ -9,10 +9,6 @@
     <!--Es para que se tenga una mejor experiencia de navegacion
     va a cargar ya consigo la pagina que pongamos-->
     <link rel="prefetch" href="index.html" as="document">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
-
     
     <!--Carga de estilos css-->
     <link rel="stylesheet" href="css/normalize.css">
@@ -28,29 +24,33 @@
 
 </head>
 <body>
-    <header class="header">
+    <header >
         
-       
-        <div id="dinamico">
             
+        <!-------Imagen encabezado -------->
+        
+
+        <!--------Barra de nevegacion------>
+        <div class="header-navegacion">
+            <div class="contenedor-nav-display contenedor--centrar">
                 <nav class="Navegacion">
 
                     <div class="centrar">
-                        <a  href="index.html">
+                        <a  href="hola.html">
                             <div class="box">
-                                <img src="img/zari-2.png" alt="salon" class="Logotipo_ballet">
+                                <img src="img/Mi.png" alt="salon" class="Logotipo_ballet">
                             </div> 
                         </a>
                     </div>
                    
                     <ul class="Navv" id="listamenuu">
                         <li class="desktop-menu__main-li">
-                            <a class="navegacion_principall desktop-menu__main-link desktop-menu__main-link--parent " href="Nosotros.html" >Nosotros</a>
+                            <a class="navegacion_principall desktop-menu__main-link desktop-menu__main-link--parent" href="Nosotros.html" >Nosotros</a>
                         </li>
                     
         
                         <li class="desktop-menu__main-li">
-                            <a class="navegacion_principal desktop-menu__main-link desktop-menu__main-link--parent" href="Cursos.html">Docencia</a>
+                            <a class="navegacion_principall desktop-menu__main-link desktop-menu__main-link--parent" href="Cursos.html">Docencia</a>
                         </li>
         
                         <li class="desktop-menu__main-li">
@@ -66,7 +66,7 @@
                         <li class="desktop-menu__main-li">
                             <a class="navegacion_principall desktop-menu__main-link desktop-menu__main-link--parent" href="Recursos.html"> Recursos</a>
                             
-                            <div class="desktop-menu__secondary-menu-wrapper"  >
+                            <div class="desktop-menu__secondary-menu-wrapper" style= "opacity: 0; display: none; transform: translateY(-20px) translateZ(0px);" >
                                 <ul class="desktop-menu__secondary-menu">
                                     <li class="desktop-menu__secondary-li"><a class="navegacion2" href="Libros.html" >Libros</a></li>
                                     <li class="desktop-menu__secondary-li"> <a class="navegacion2" href="Articulos.html" >Articulos</a></li>
@@ -89,7 +89,7 @@
                 </nav>
 
 
-            
+            </div>
 
 
 
@@ -104,55 +104,10 @@
         
 </header>
 
-<div class="centrar-texto frase">
-    <h1>ZariAyuda</h1>
-</div>
-
 
 <div class="img-responsive">
-    <img src="img/chichen-removebg-preview.png" alt="chichen">
+    <h1 id="Frase">SALUD MENTAL</h1>
 </div>
-
-<footer class="footer">
-    <div class="contenedor-footer">
-        <div class="contenedor-footer2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-              </svg>
-            <p class="letra_footer">999 338 1894</p>
-
-        </div>
-
-        <div class="contenedor-footer2"> 
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                <path d="M3 7l9 6l9 -6" />
-            </svg>
-            <p class="letra_footer"> bellezatania@hotmail.com</p>
-
-        </div>
-
-        
-        <div class="contenedor-footer2"> 
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-              </svg>
-            <p class="letra_footer">Calle 64 No.551 Col.Centro , Mérida, Mexico, 97000</p>
-        </div>
-        
-
-        
-
-
-    </div>
-
-
-</footer>
 
 
     
